@@ -1,0 +1,42 @@
+{{ define "search-hospitals.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Больницы - {{.City}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/for-search.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Телефонный справочник</h1>
+            <div class="logout-button">
+                <a href="/log-out"><button>Выход</button></a>
+            </div>
+        </div>
+    </header>
+
+    <h2>Больницы города {{.City}}</h2>
+
+    <!-- Форма поиска по больницам -->
+    <form action="/search/hospitals/{{.City}}" method="post">
+        <label for="name">Название:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="number">Номер:</label>
+        <input type="text" id="number" name="number">
+        <br>
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address">
+        <br>
+        <input type="submit" value="Искать">
+    </form>
+
+    {{ template "footer" . }}
+</body>
+
+</html>
+{{ end }}

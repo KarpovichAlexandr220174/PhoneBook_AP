@@ -1,0 +1,38 @@
+{{ define "search-page.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск - {{.City}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/for-search.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Телефонный справочник</h1>
+            <div class="logout-button">
+                <a href="/log-out"><button>Выход</button></a>
+            </div>
+        </div>
+    </header>
+
+    <h2>Поиск в городе {{.City}}</h2>
+
+    <form action="/search/{{.City}}" method="post">
+        <label for="phone">Номер телефона:</label>
+        <input type="text" id="phone" name="phone">
+        <br>
+        <label for="name">Фамилия Имя Отчество:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <input type="submit" value="Искать">
+    </form>
+
+    {{ template "footer" . }}
+</body>
+
+</html>
+{{ end }}

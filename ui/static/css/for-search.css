@@ -1,0 +1,101 @@
+/* Общие стили для формы и надписей */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('file:/C:/Users/w2/Pictures/y5kooixtw155xl58g7po9hhpvx0c2t5s.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logout-button button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff; /* Цвет фона формы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень формы */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Цвет рамки текстового поля */
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Стили для списка больниц */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Стили для каждой строки в списке больниц */
+li {
+    margin-bottom: 20px;
+    background-color: #fff; /* Цвет фона строки списка */
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень строки списка */
+}
+
+/* Стили для названия больницы */
+li strong {
+    font-size: 18px;
+    color: #333;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Телефонный справочник</h1>
+            <div class="logout-button">
+                <a href="/log-out"><button>Выход</button></a>
+            </div>
+        </div>
+    </header>
+
+
+<h1>Телефоны Казахстана</h1>
+<ul>
+
+   <div class="combined-button">
+                     Атырау
+                     <ul class="submenu">
+                         <li><a href="/city/Atyrau">Номера людей</a></li>
+                         <li><a href="/city/hospitals/Atyrau">Больницы Атырау</a></li>
+                         <li><a href="/city/schools/Atyrau">Школы Атырау</a></li>
+                     </ul>
+   </div>
+
+   <div class="combined-button">
+               Астана
+               <ul class="submenu">
+                   <li><a href="/city/Astana">Номера людей</a></li>
+                   <li><a href="/city/hospitals/Astana">Больницы Астаны</a></li>
+                   <li><a href="/city/schools/Astana">Школы Астаны</a></li>
+               </ul>
+   </div>
+
+   <div class="combined-button">
+                  Алматы
+                  <ul class="submenu">
+                      <li><a href="/city/Almaty">Номера людей</a></li>
+                      <li><a href="/city/hospitals/Almaty">Больницы Алматы</a></li>
+                      <li><a href="/city/schools/Almaty">Школы Алматы</a></li>
+                  </ul>
+   </div>
+
+   <div class="combined-button">
+                     Актобе
+                     <ul class="submenu">
+                         <li><a href="/city/Aktobe">Номера людей</a></li>
+                         <li><a href="/city/hospitals/Aktobe">Больницы Актобе</a></li>
+                         <li><a href="/city/schools/Aktobe">Школы Актобе</a></li>
+                     </ul>
+   </div>
+
+    <div class="combined-button">
+                        Шымкент
+                        <ul class="submenu">
+                            <li><a href="/city/Shymkent">Номера людей</a></li>
+                            <li><a href="/city/hospitals/Shymkent">Больницы Шымкента</a></li>
+                            <li><a href="/city/schools/Shymkent">Школы Шымкента</a></li>
+                        </ul>
+      </div>
+
+</ul>
+
+{{ template "footer" . }}
+
+</html>
+
+
+

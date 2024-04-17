@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-size: 600% 600%;
+    animation: gradient 15s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure full height of the viewport */
+    color: #fff;
+}
+
+
+form label {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#about-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em; /* РЈСЃС‚Р°РЅРѕРІРёС‚Рµ СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° РїРѕ РІР°С€РµРјСѓ СѓСЃРјРѕС‚СЂРµРЅРёСЋ */
+    white-space: pre-line; /* Р­С‚Рѕ РѕР±РµСЃРїРµС‡РёС‚ РїРµСЂРµРЅРѕСЃ СЃС‚СЂРѕРєРё РїСЂРё РЅР°Р»РёС‡РёРё СЃРёРјРІРѕР»РѕРІ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.course {
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Adjust as needed */
+    text-align: center;
+}
+
+/* РћР±РЅРѕРІР»РµРЅРЅС‹Р№ СЃС‚РёР»СЊ РґР»СЏ РІСЃРµС… РєРЅРѕРїРѕРє СЃ РєСЂР°СЃРёРІС‹Рј РіСЂР°РґРёРµРЅС‚РЅС‹Рј С„РѕРЅРѕРј */
+button, a {
+    margin-top: 10px;
+    background: linear-gradient(to top, #3498db, #2980b9); /* РСЃРїРѕР»СЊР·СѓР№С‚Рµ РІР°С€ РіСЂР°РґРёРµРЅС‚РЅС‹Р№ С†РІРµС‚ */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px; /* РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј СЂР°РґРёСѓСЃ РіСЂР°РЅРёС†С‹ */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, a:hover {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px; /* Р”РѕР±Р°РІР»РµРЅРЅС‹Р№ РѕС‚СЃС‚СѓРї РјРµР¶РґСѓ С„СѓС‚РµСЂРѕРј Рё РєРЅРѕРїРєРѕР№ */
+}
+
+.website, .follow-us {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 20px; /* РћС‚СЃС‚СѓРї РјРµР¶РґСѓ РёРєРѕРЅРєР°РјРё */
+}
+
+
+
+
+/* РЎС‚РёР»РёР·Р°С†РёСЏ РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР° РІС‹Р±РѕСЂР° СЏР·С‹РєР° */
+#language-select {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to top, #3498db, #2980b9);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    appearance: none; /* РЈР±РёСЂР°РµРј СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ СЃС‚СЂРµР»РѕС‡РЅС‹Р№ СЌР»РµРјРµРЅС‚ */
+    -webkit-appearance: none; /* Р”Р»СЏ РїРѕРґРґРµСЂР¶РєРё РІРµР±РєРёС‚-Р±СЂР°СѓР·РµСЂР°РјРё */
+    -moz-appearance: none; /* Р”Р»СЏ РїРѕРґРґРµСЂР¶РєРё Firefox */
+}
+
+/* РЎС‚РёР»Рё РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° РІС‹РїР°РґР°СЋС‰РёР№ СЃРїРёСЃРѕРє */
+#language-select:hover {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+/* РЎС‚РёР»Рё РґР»СЏ РѕРїС†РёР№ РІ РІС‹РїР°РґР°СЋС‰РµРј СЃРїРёСЃРєРµ */
+#language-select option {
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* РЎС‚РёР»Рё РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° РѕРїС†РёРё РІ РІС‹РїР°РґР°СЋС‰РµРј СЃРїРёСЃРєРµ */
+#language-select option:hover {
+    background: #555;
+}
+
+
+
+/* РџСЂРёРјРµСЂ СЃС‚РёР»РµР№ РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ РїСЂРѕС„РёР»СЏ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.profile-info p {
+    margin: 0 0 10px;
+}
+
+.profile-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.profile-button {
+    margin-top: 20px; /* РґРѕР±Р°РІР»СЏРµРј РЅРµРјРЅРѕРіРѕ РѕС‚СЃС‚СѓРїР° СЃРІРµСЂС…Сѓ */
+    padding: 10px 25px; /* СѓРІРµР»РёС‡РёРІР°РµРј РѕС‚СЃС‚СѓРїС‹ РІРЅСѓС‚СЂРё РєРЅРѕРїРєРё */
+    font-size: 1.0em; /* СѓРІРµР»РёС‡РёРІР°РµРј СЂР°Р·РјРµСЂ С‚РµРєСЃС‚Р° РєРЅРѕРїРєРё */
+}
+
+/* login.css */
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+a {
+    margin-top: 10px;
+    background: linear-gradient(to top, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+}
