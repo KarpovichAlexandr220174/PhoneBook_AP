@@ -11,6 +11,7 @@ func main() {
 	drivers.InitDB("user=postgres dbname=finalGo password=0000 sslmode=disable\n")
 	mux := http.NewServeMux()
 
+	//важно
 	http.Handle("/", TimeoutHandler(15*time.Second, mux))
 
 	mux.HandleFunc("/", home)
