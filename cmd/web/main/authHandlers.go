@@ -81,34 +81,6 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "register.tmpl", nil)
 }
 
-//func loginHandler(w http.ResponseWriter, r *http.Request) {
-//	if r.Method == http.MethodPost {
-//		// Получаем почту или ник пользователя и пароль из формы входа
-//		emailOrUsername := r.FormValue("emailOrUsername")
-//		password := r.FormValue("password")
-//
-//		// Получаем пользователя из базы данных по его почте или нику
-//		user, err := models.GetUser(emailOrUsername)
-//		if err != nil {
-//			http.Error(w, "Неверные данные для входа", http.StatusUnauthorized)
-//			return
-//		}
-//
-//		// Проверяем, совпадает ли введенный пароль с паролем пользователя
-//		if user.Password != password {
-//			http.Error(w, "Неверные данные для входа", http.StatusUnauthorized)
-//			return
-//		}
-//
-//		// Если пароль верный, выполняем необходимые действия для входа пользователя
-//		// Например, установим куки для сессии и выполним перенаправление на другую страницу
-//		http.Redirect(w, r, "/application", http.StatusSeeOther)
-//	} else {
-//		// Если метод запроса не POST, показываем страницу входа
-//		tmpl.ExecuteTemplate(w, "login.tmpl", nil)
-//	}
-//}
-
 func loginHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		// Получение почты или имени пользователя и пароля из формы входа
