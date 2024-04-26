@@ -92,7 +92,7 @@ func checkAdminAuthentication(r *http.Request) bool {
 
 // Функция для аутентификации администратора (заглушка)
 func authenticateAdmin(username, password string) bool {
-	return username == "admin" && password == "aituTOP" // Замените на вашу логику аутентификации
+	return username == "admin" && password == "55" // Замените на вашу логику аутентификации
 }
 
 // Функция для загрузки данных из JSON-файла

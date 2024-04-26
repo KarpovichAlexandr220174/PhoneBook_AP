@@ -40,8 +40,8 @@ func application(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "main-page.tmpl", nil)
 }
 
-func home(w http.ResponseWriter, r *http.Request) {
-	tmpl.ExecuteTemplate(w, "home.tmpl", nil)
+func message(w http.ResponseWriter, r *http.Request) {
+	tmpl.ExecuteTemplate(w, "check.tmpl", nil)
 }
 
 func searchSchoolsPageHandler(w http.ResponseWriter, r *http.Request) {

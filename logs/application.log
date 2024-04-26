@@ -1,0 +1,5 @@
+Server Log: 2024/04/26 04:29:53 main.go:90: Starting server on :5000
+Server Log: 2024/04/26 04:32:45 main.go:90: Starting server on :5000
+Server Log: 2024/04/26 04:33:01 main.go:90: Starting server on :5000
+Server Log: 2024/04/26 04:33:35 authHandlers.go:76: Пользователь зарегистрирован: имя=maksat, почта=220174@astanait.edu.kz
+Server Log: 2024/04/26 04:33:54 authHandlers.go:135: Пользователь вошел в систему: maksat
