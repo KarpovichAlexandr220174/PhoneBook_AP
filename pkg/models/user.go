@@ -16,8 +16,6 @@ type User struct {
 }
 
 func SaveUser(user User) error {
-	// Ваша логика сохранения пользователя в базу данных NoSQL
-	// Здесь можно использовать MongoDB или любую другую NoSQL базу данных
 
 	// Пример для MongoDB:
 	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://localhost:27017"))
