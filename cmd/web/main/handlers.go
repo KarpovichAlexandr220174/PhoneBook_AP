@@ -60,7 +60,6 @@ func searchSchoolsHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Чтение данных из JSON
 	file, err := ioutil.ReadFile("phonebook.json")
 	if err != nil {
 		http.Error(w, "Error reading phonebook data", http.StatusInternalServerError)
